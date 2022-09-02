@@ -1,11 +1,15 @@
 from flask import Flask
 
 app = Flask(__name__)
-
+###foward slash is the equivalent of a webdomain
 @app.route('/')
 def hello_world():
     return 'Hello world!'
 
+@app.route('/careers')
+def careers():
+    return 'careers page'
+### we can run package by typing in command into terminal, continuous until stopped
 if __name__ == '__main__':
     app.run(debug=True, host='localhost', port=80)
 
@@ -31,3 +35,6 @@ if __name__ == '__main__':
     # this mean you can open up your browser an go to either `localhost` as the website, or `127.0.0.1` as the website.
 # - The `port=80` is used to set the port to listen on. you can change this to whatever open port you want.
     # if you change the port, you need to update your website address to 0.0.0.0:8080 or localhost:8080 as an example 
+
+##wendys notes
+## error code 404 means not found

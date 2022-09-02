@@ -10,7 +10,7 @@
 
 ### Step 4
 `pip freeze > requirements.txt`
-
+### just captures what packages are installed
 ### Step 5
 - Insert into a app.py file: 
 ```
