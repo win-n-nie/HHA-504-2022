@@ -3,8 +3,16 @@ from flask import Flask
 app = Flask(__name__)
 ###foward slash is the equivalent of a webdomain
 @app.route('/')
-def hello_world():
-    return 'Hello world!'
+def default_home():
+    return 'Hello Hants!'
+
+@app.route('/careers')
+def careers():
+    return 'This is the career page...'
+
+@app.route('/dashboards')
+def dashboards():
+    return 'This is our dashboards page...'
 
 @app.route('/careers')
 def careers():
